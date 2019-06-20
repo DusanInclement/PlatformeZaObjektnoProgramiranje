@@ -1,0 +1,32 @@
+﻿<Window x:Class="ProjekatPop.MojeKarte"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatPop"
+        mc:Ignorable="d"
+        Title="MojeKarte" Height="399.013" Width="1044.806"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="dataGridKarte" HorizontalAlignment="Left" Margin="26,20,0,0" VerticalAlignment="Top" Height="226" Width="685"
+            SelectionMode="Single"
+            IsReadOnly="True"
+            AlternationCount="2"
+            AlternatingRowBackground="Yellow"
+            CanUserAddRows="False"  />
+        <Button x:Name="buttonObrisi" Content="Obrisi" HorizontalAlignment="Left" Margin="230,273,0,0" VerticalAlignment="Top" Width="110" Height="28" Click="buttonObrisi_Click"/>
+        <Button x:Name="button" Content="Pogledaj Kartu" HorizontalAlignment="Left" Margin="62,273,0,0" VerticalAlignment="Top" Width="110" Height="28" Click="button_Click"/>
+        <Label x:Name="label" Content="Broj Leta:" HorizontalAlignment="Left" Margin="756,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Ime Korisnika:" HorizontalAlignment="Left" Margin="756,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Plazni Grad:" HorizontalAlignment="Left" Margin="756,120,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Dolazni Grad:" HorizontalAlignment="Left" Margin="756,160,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Tip Sedista:" HorizontalAlignment="Left" Margin="756,200,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxBrLeta" HorizontalAlignment="Left" Height="23" Margin="849,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" KeyUp="textBoxBrLeta_KeyUp"/>
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Height="23" Margin="849,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" KeyUp="textBoxIme_KeyUp"/>
+        <TextBox x:Name="textBoxPolazniG" HorizontalAlignment="Left" Height="23" Margin="849,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" KeyUp="textBoxPolazniG_KeyUp"/>
+        <TextBox x:Name="textBoxDolazniG" HorizontalAlignment="Left" Height="23" Margin="849,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" KeyUp="textBoxDolazniG_KeyUp"/>
+        <TextBox x:Name="textBoxTipS" HorizontalAlignment="Left" Height="23" Margin="849,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" KeyUp="textBoxTipS_KeyUp"/>
+
+    </Grid>
+</Window>

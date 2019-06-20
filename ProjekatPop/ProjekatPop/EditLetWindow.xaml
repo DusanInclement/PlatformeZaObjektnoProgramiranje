@@ -1,0 +1,55 @@
+﻿<Window x:Class="ProjekatPop.EditLetWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatPop"
+        xmlns:toolkit ="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="EditLetWindow" Height="652.994" Width="464.195"        
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="label" Content="Sifra:" HorizontalAlignment="Left" Margin="30,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Pilot:" HorizontalAlignment="Left" Margin="30,100,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Vreme Polaska:" HorizontalAlignment="Left" Margin="30,160,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Vreme Dolaska:" HorizontalAlignment="Left" Margin="30,220,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Polazni Aerodrom:" HorizontalAlignment="Left" Margin="30,280,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="Dolazni Aerodrom:" HorizontalAlignment="Left" Margin="30,340,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="Avion" HorizontalAlignment="Left" Margin="30,400,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7" Content="Cena" HorizontalAlignment="Left" Margin="30,460,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxSifra" HorizontalAlignment="Left" Height="23" Margin="150,44,0,0" TextWrapping="Wrap" Text="{Binding Path=Sifra}" VerticalAlignment="Top" Width="287"/>
+        <TextBox x:Name="textBoxPilot" HorizontalAlignment="Left" Height="22" Margin="153,104,0,0" TextWrapping="Wrap" Text="{Binding Path=Pilot}" VerticalAlignment="Top" Width="284"/>
+        <toolkit:DateTimePicker Name="datePickerDatumPolaska" Value="{Binding Path=vremePolaska}" Margin="153,154,20.4,437.2" />
+        <toolkit:DateTimePicker Name="datePickerDatumDolaska"  Margin="153,214,20.2,377.2" Value="{Binding Path=vremeDolaska}" />
+        <ComboBox x:Name="comboBoxPolazniAerodrom" HorizontalAlignment="Left" 
+                  
+                 DisplayMemberPath="Grad"
+                 SelectedItem="{Binding Path=PolazniAerodrom}"
+                 SelectedValue="{Binding Path=PolazniAerodrom.Grad}"
+                 SelectedValuePath="Grad"
+                 Margin="153,280,0,0" VerticalAlignment="Top" Width="284" Height="26"/>
+        
+        <ComboBox x:Name="comboBoxDolazniAerodrom" HorizontalAlignment="Left" 
+                  
+                 DisplayMemberPath="Grad"
+                 SelectedItem="{Binding Path=DolazniAerodrom}"
+                 SelectedValue="{Binding Path=DolazniAerodrom.Grad}"
+                 SelectedValuePath="Grad"
+                  
+                  Margin="153,340,0,0" VerticalAlignment="Top" Width="284" Height="26"/>
+        <ComboBox x:Name="comboBoxAvion" HorizontalAlignment="Left" 
+                  
+                 
+                 DisplayMemberPath="Naziv"
+                 SelectedItem="{Binding Path=Avion}"
+                 SelectedValue="{Binding Path=Avion.Naziv}"
+                 SelectedValuePath="Naziv"
+                  
+                  
+                  Margin="153,400,0,0" VerticalAlignment="Top" Width="284" Height="26"/>
+        <TextBox x:Name="textBoxCena" HorizontalAlignment="Left" Height="23" Margin="150,464,0,0" TextWrapping="Wrap" Text="{Binding Path=Cena}" VerticalAlignment="Top" Width="287"/>
+        <Button x:Name="buttonSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="32,562,0,0" VerticalAlignment="Top" Width="110" Height="32" Click="buttonSacuvaj_Click"/>
+        <Button x:Name="buttonCancel" Content="Button" HorizontalAlignment="Left" Margin="327,562,0,0" VerticalAlignment="Top" Width="110" Height="32"/>
+    </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="ProjekatPop.LetoviWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatPop"
+        mc:Ignorable="d"
+        Title="LetoviWindow" Height="399.013" Width="1142.906"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="dataGridLetovi" HorizontalAlignment="Left" Margin="26,20,0,0" VerticalAlignment="Top" Height="226" Width="685"
+            SelectionMode="Single"
+            IsReadOnly="True"
+            AlternationCount="2"
+            AlternatingRowBackground="Yellow"
+            CanUserAddRows="False"  />
+        <Button x:Name="buttonObrisi" Content="Obrisi" HorizontalAlignment="Left" Margin="300,265,0,0" VerticalAlignment="Top" Width="110" Height="28" Click="buttonObrisi_Click"/>
+        <Button x:Name="buttonPromeni" Content="Promeni" HorizontalAlignment="Left" Margin="162,265,0,0" VerticalAlignment="Top" Width="110" Height="28" Click="buttonPromeni_Click"/>
+        <Button x:Name="buttonDodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="26,265,0,0" VerticalAlignment="Top" Width="110" Height="28" Click="buttonDodaj_Click"/>
+        <Label x:Name="label2" Content="Sifra:" HorizontalAlignment="Left" Margin="786,65,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxSifra" HorizontalAlignment="Left" Height="23" Margin="884,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" KeyUp="textBoxSifra_KeyUp"/>
+        <Label x:Name="labelPilot" Content="Cena:" HorizontalAlignment="Left" Margin="786,165,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxCena" HorizontalAlignment="Left" Height="23" Margin="884,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" KeyUp="textBoxCena_KeyUp"/>
+        <Label x:Name="label3" Content="Avio Kompanija:" HorizontalAlignment="Left" Margin="786,115,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxAerodrom" HorizontalAlignment="Left" Margin="883,115,0,0" VerticalAlignment="Top" Width="185" SelectionChanged="comboBoxAerodrom_SelectionChanged"/>
+        <Label x:Name="label4" Content="Polazni Grad:" HorizontalAlignment="Left" Margin="786,215,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxPolazniAerodrom" HorizontalAlignment="Left" Height="23" Margin="884,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" KeyUp="textBoxPolazniAerodrom_KeyUp"/>
+        <TextBox x:Name="textBoxDestinacija" HorizontalAlignment="Left" Height="23" Margin="884,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" KeyUp="textBoxDestinacija_KeyUp"/>
+        <Label x:Name="label5" Content="Destinacija:" HorizontalAlignment="Left" Margin="786,265,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="Pretraga:" HorizontalAlignment="Left" Margin="883,20,0,0" VerticalAlignment="Top" Width="73"/>
+
+    </Grid>
+</Window>

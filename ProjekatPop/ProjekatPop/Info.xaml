@@ -1,0 +1,32 @@
+﻿<Window x:Class="ProjekatPop.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatPop"
+        mc:Ignorable="d"
+        Title="Info" Height="438.211" Width="324.39"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="Ime: " HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Prezime: " HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Email: " HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Adresa: " HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Pol: " HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="UserName: " HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="Password: " HorizontalAlignment="Left" Margin="10,272,0,-27.2" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Height="23" Margin="100,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+        <TextBox x:Name="textBoxPrezime" HorizontalAlignment="Left" Height="23" Margin="100,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+        <TextBox x:Name="textBoxEmail" HorizontalAlignment="Left" Height="23" Margin="100,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+        <TextBox x:Name="textBoxAdresa" HorizontalAlignment="Left" Height="23" Margin="100,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+        <ComboBox x:Name="comboBoxPol" HorizontalAlignment="Left" Margin="100,192,0,0" VerticalAlignment="Top" Width="184"/>
+        <TextBox x:Name="textBoxUserName" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="99,232,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185"/>
+        <TextBox x:Name="textBoxPassword" HorizontalAlignment="Left" Height="23" Margin="100,272,0,-24.6" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+        <Button x:Name="buttonIzmeni" Content="Izmeni" HorizontalAlignment="Left" Margin="44,366,0,0" VerticalAlignment="Top" Width="91" Height="33" Click="buttonIzmeni_Click"/>
+        <Button x:Name="buttonOdustani" Content="Odustani" HorizontalAlignment="Left" Margin="159,366,0,0" VerticalAlignment="Top" Width="97" Height="33" Click="buttonOdustani_Click"/>
+        <Label x:Name="label7" Content="Tip Korisnika:" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxTip" HorizontalAlignment="Left" IsReadOnly="True"  Margin="99,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="184"/>
+
+    </Grid>
+</Window>

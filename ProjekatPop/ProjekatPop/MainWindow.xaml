@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProjekatPop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatPop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" Content="UserName:" HorizontalAlignment="Left" Margin="230,48,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxUserName" TabIndex="0" Padding="5"  HorizontalAlignment="Left" Height="31" Margin="134,79,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="254"/>
+        <Label x:Name="label1"  Content="Password:" HorizontalAlignment="Left" Margin="230,110,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonLogIn" TabIndex="2" Content="LogIn" HorizontalAlignment="Left" Margin="135,196,0,0" VerticalAlignment="Top" Width="88" Height="32" Click="buttonLogIn_Click"/>
+        <Button x:Name="buttonRegister" TabIndex="3" Content="Register" HorizontalAlignment="Left" Margin="294,196,0,0" VerticalAlignment="Top" Width="94" Height="32" Click="buttonRegister_Click"/>
+        <Button x:Name="buttonUnRegister" TabIndex="4" Content="Enter UnRegistered" HorizontalAlignment="Left" Margin="348,274,0,0" VerticalAlignment="Top" Width="140" Height="25" Click="buttonUnRegister_Click"/>
+        <PasswordBox x:Name="passwordBoxPassword" TabIndex="1" Padding="5" Margin="10,144,0,0" VerticalAlignment="Top"  Width="254" Height="31"/>
+    </Grid>
+</Window>

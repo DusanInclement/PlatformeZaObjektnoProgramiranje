@@ -1,0 +1,27 @@
+﻿<Window x:Class="ProjekatPop.AvionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjekatPop"
+        mc:Ignorable="d"
+        Title="AvionWindow" Height="399.013" Width="990.806"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid>
+        <DataGrid x:Name="dataGridAvioni" HorizontalAlignment="Left" Margin="26,20,0,0" VerticalAlignment="Top" Height="226" Width="685"
+            SelectionMode="Single"
+            IsReadOnly="True"
+            AlternationCount="2"
+            AlternatingRowBackground="Yellow"
+            CanUserAddRows="False"  />
+        <Button x:Name="buttonObrisi" Content="Obrisi" HorizontalAlignment="Left" Margin="300,265,0,0" VerticalAlignment="Top" Width="110" Height="28" Click="buttonObrisi_Click"/>
+        <Button x:Name="buttonPromeni" Content="Promeni" HorizontalAlignment="Left" Margin="162,265,0,0" VerticalAlignment="Top" Width="110" Height="28" Click="buttonPromeni_Click"/>
+        <Button x:Name="buttonDodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="26,265,0,0" VerticalAlignment="Top" Width="110" Height="28" Click="buttonDodaj_Click"/>
+        <Label x:Name="label1" Content="Naziv: " HorizontalAlignment="Left" Margin="761,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="AvioKompanija: " HorizontalAlignment="Left" Margin="711,101,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxNaziv" HorizontalAlignment="Left" Height="23" Margin="815,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" KeyUp="textBoxNaziv_KeyUp"/>
+        <TextBox x:Name="textBoxAvioKompanija" HorizontalAlignment="Left" Height="23" Margin="815,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" KeyUp="textBoxAvioKompanija_KeyUp"/>
+
+    </Grid>
+</Window>
